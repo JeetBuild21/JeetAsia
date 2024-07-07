@@ -9,60 +9,152 @@
 <body>
     <div class="main">
         <header>
-            <div class="name">
-                <h4><a href="#!"><img src="Images/jeet_asia_logo.jpg" alt="company logo"></a></h4>
+            <div class="logo_name">
+                <h4><a href="#home"><img src="Images/jeet_asia_logo.jpg" alt="company logo"></a></h4>
             </div>
             <nav class="nav-bar">
                 <ul>
-                    <li><a class="nav-element" href="#!">Home</a></li>
-                    <li><a class="nav-element" href="#!">About</a></li>
+                    <li><a class="nav-element" href="#home">Home</a></li>
+                    <li><a class="nav-element" href="#about-us">About</a></li>
+                    <li><a class="nav-element" href="#!">Projects</a></li>
+                    <li><a class="nav-element" href="#!">Partners</a></li>
                     <li><a class="nav-element" href="#!">Contact</a></li>
                 </ul>
             </nav>
         </header>
-       <div class="section-container-main">
-        <section class="section-container">
-            <section class="contact-details">
-                <div class="contact-detail" id="address">
-                    <i class="fa fa-location-dot"></i>
-                    <span class="contact-method">Address</span>
-                    <div class="contact-info">
-                        SCO-5, 2ND Floor, Huda Market <br>
-                        Sector 10A, Near Honda Chowk <br>
-                        Gurugram (HR)
+        <!-- Image Slider -->
+        <section class="sliders" id="home">
+            <div class="slider">
+                <!-- fade css -->
+                <div class="myslide fade">
+                    <div class="txt">
+                        <p>Helping India<br>moving faster and safer <br> from A to B</p>
                     </div>
+                    <img src="Images\home\pic_1.jpeg" style="width: 100%; height: 100%;">
                 </div>
-                <div class="contact-detail" id="phone">
-                    <i class="fa fa-phone"></i>
-                    <span class="contact-method">Contact</span>
-                    <div class="contact-info">
-                        +91-8053805321
+                <div class="myslide fade">
+                    <div class="txt">
+                        <p>Transforming<br>New India</p>
                     </div>
+                    <img src="Images\home\pic_2.jpeg" style="width: 100%; height: 100%;">
                 </div>
-                <div class="contact-detail" id="email">
-                    <i class="fa fa-envelope"></i>
-                    <span class="contact-method">Email</span>
-                    <div class="contact-info">
-                        jeetbuildcon21@gmail.com <br>
-                        jeetconstruction21@gmail.com
+                <div class="myslide fade">
+                    <div class="txt">
+                        <p>We work<br>with highest Standards</p>
                     </div>
+                    <img src="Images\home\pic_3.jpeg" style="width: 100%; height: 100%;">
                 </div>
-            </section>
-            <div class="vl"></div>
-            <section class="contact-form">
-                <div class="message-text">
-                    <span>Send us a Message</span>
-                    <p>If you have any work from me or any types of quries related to the my expertise, you can send me message from here. It's my pleasure to help you.</p>
+                <div class="myslide fade">
+                    <div class="txt">
+                        <p>We not only understand<br>the need of the customers,<br>we deliver the best</p>
+                    </div>
+                    <img src="Images\home\pic_4.jpeg" style="width: 100%; height: 100%;">
                 </div>
-                <div class="form-group">
-                    <input type="text" class="form-element" placeholder="Enter your name" required>
-                    <input type="email" class="form-element" placeholder="Enter your email address" required>
-                    <textarea type="textarea" class="form-element" placeholder="Enter your message" required></textarea>
-                    <button type="submit">Send now</button>
+                <!-- /fade css -->
+                <!-- onclick js -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="dotsbox" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
                 </div>
-            </section>
+                <!-- /onclick js -->
+            </div>
         </section>
-       </div>
+        <!-- Sectors -->
+        <section class="sectors">
+            <div class="sector-container">
+                <div class="halfsection">
+                    <p>Our Speciality:</p>
+                </div>
+                <div class="slider-section">
+                    <div class="speciality-text">
+                        <h2>Rail Infrastructure</h2>
+                        <p>Earth work, Sub-grade construction & Blanket</p>
+                    </div>
+                    <img src="Images\Speciality\Railway.jfif" style="width: 100%; height: 100%;">
+                </div>
+                <div class="slider-section">
+                    <div class="speciality-text">
+                        <h2>Canal Construction</h2>
+                    </div>
+                    <img src="Images\Speciality\Canal.jfif" style="width: 100%; height: 100%;">
+                </div>
+                <div class="slider-section">
+                    <div class="speciality-text">
+                        <h2>National Highway</h2>
+                        <p>State highway construction</p>
+                    </div>
+                    <img src="Images\Speciality\Highway.jfif" style="width: 100%; height: 100%;">
+                </div>
+                <div class="slider-section">
+                    <div class="speciality-text">
+                        <h2>Industrial Area Development </h2>
+                        <p>(Industrial Model Township), <br> Go down, platform filling and other civil work</p>
+                    </div>
+                    <img src="Images\Speciality\industrial area development.jfif" style="width: 100%; height: 100%;">
+                </div>
+                <a class="prev1" onclick="plusSlides(-1)">&#9650;</a>
+                <a class="next1" onclick="plusSlides(1)">&#9660;</a>
+            </div>
+            <script src="javaScript.js"></script>
+        </section>
+        <!-- About -->
+        <section class="about-us" id="about-us">
+            <div class="about">
+                <h2>About</h2>
+                <p>Having a wide experience in various Civil Engineering aspects such as railway infrastructure, road and highways etc., we collectively accept responsibility for the schedule, quality and financial success of each project proprietor is personally taxed on all income from the business.</p>
+            </div>
+        </section>
+        <!-- Projects -->
+        <section class="projects">
+
+        </section>
+
+
+
+        <!-- Contact form -->
+        <!-- <section class="contact-details">
+            <div class="contact-detail" id="address">
+                <i class="fa fa-location-dot"></i>
+                <span class="contact-method">Address</span>
+                <div class="contact-info">
+                    SCO-5, 2ND Floor, Huda Market <br>
+                    Sector 10A, Near Honda Chowk <br>
+                    Gurugram (HR)
+                </div>
+            </div>
+            <div class="contact-detail" id="phone">
+                <i class="fa fa-phone"></i>
+                <span class="contact-method">Contact</span>
+                <div class="contact-info">
+                    +91-8053805321
+                </div>
+            </div>
+            <div class="contact-detail" id="email">
+                <i class="fa fa-envelope"></i>
+                <span class="contact-method">Email</span>
+                <div class="contact-info">
+                    jeetbuildcon21@gmail.com <br>
+                    jeetconstruction21@gmail.com
+                </div>
+            </div>
+        </section>
+        <div class="vl"></div>
+        <section class="contact-form">
+            <div class="message-text">
+                <span>Send us a Message</span>
+                <p>If you have any work from me or any types of quries related to the my expertise, you can send me message from here. It's my pleasure to help you.</p>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-element" placeholder="Enter your name" required>
+                <input type="email" class="form-element" placeholder="Enter your email address" required>
+                <textarea type="textarea" class="form-element" placeholder="Enter your message" required></textarea>
+                <button type="submit">Send now</button>
+            </div>
+        </section> -->
     </div>
 </body>
 </html>
