@@ -62,3 +62,28 @@ function slidefun(n) {
     // Add 'active' class to the current dot
     dot[counter - 1].className += " active";
 }
+
+function sendEmail(event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Use EmailJS to send the email
+    var templateParams = {
+        name: name,
+        email: email,
+        message: message
+    };
+
+    emailjs.send('service_id', 'template_id', templateParams)
+        .then(function(response) {
+            console.log('Email sent successfully!', response);
+            // Clear the form fields
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
+        }, function(error) {
+            console.log('Error sending email:', error);
+        });
+}

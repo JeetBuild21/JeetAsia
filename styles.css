@@ -355,147 +355,110 @@ body{
 /* Projects */
 
 
-/* Contact form */ 
-.section-container .contact-details,
-.contact-details .contact-detail, .contact-info{
-    width: 175px;
+/* Contact form */
+.contact-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding: 0px 200px 50px 200px;
+    background-color: #f9f9f9; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.contact_us h2{
     text-align: center;
+    font-size: 42px;
+    margin-top: 20px;
+    margin-left: -700px;
+    margin-bottom: 20px;
 }
 
-.contact-details{
-    padding: 40px 0px 40px 0px;
-}
-
-.contact-details .contact-detail{
-    margin-bottom: 10px;
-}
-
-.contact-detail i{
-    font-size: 1rem;
-    margin-bottom: 5px;
-    color: var(--main-purple);
-}
-
-.contact-detail .contact-method{
-    font-size: small;
-    font-weight: 600;
-}
-
-.contact-detail .contact-info{
-    font-size: x-small;
-}
-
-.vl{
-    border-left: 1px solid rgb(97, 95, 95);
-    height: 250px;
-    margin: auto auto;
-    width: 1dvh;
-}
-
-.section-container .contact-form{
+.contact-content {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 35px 20px 20px 20px;
-}
-
-.section-container .contact-form .form-group{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 10px;
-}
-
-.form-group input,
-.form-group textarea{
+    justify-content: space-between;
     width: 100%;
-    height: 20px;
-    margin: 5px 0px 5px 0px;
-    border: 1px solid rgb(198, 197, 197);
-    border-radius: 6px;
-    resize: none;
-    font-size: x-small;
-    padding: 10px;
-    &::placeholder{
-        padding-left: 5px;
-        font-size: x-small;
-    }
+    align-items: center;
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
 }
 
-.form-group textarea{
-    height: 100px;
+.contact-details {
+    width: 40%; 
+    height: 50vh;
+    padding: 0px 40px; 
+    background-color: #fff; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-right: 1px solid black;
 }
 
-.contact-form .message-text span{
-    font-weight: 600;
-    color: var(--main-purple);
+.contact-detail {
+    margin-bottom: px;
 }
 
-.contact-form .message-text p{
-    font-size: x-small;
+.contact-method {
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
-.form-group button{
-    width: 100px;
-    height: 20px;
-    background-color: var(--main-purple);
-    color: white;
-    border: 1px solid transparent;
-    border-radius: 6px;
-    margin-top: 5px;
-    font-size: x-small;
+.contact-info {
+    font-size: 16px;
 }
 
-@media screen and (max-width: 968px) {
-    *{
-        font-size: xx-small;
-    }
-    
-    .main{
-        /* overflow: hidden; */
-    }
+.contact-form {
+    width: 60%;
+    padding: 20px; 
+    background-color: #fff;  
+}
 
-    .section-container{
-        flex-direction: column-reverse;
-    }
+.message-text {
+    margin-bottom: 20px;
+}
 
-    .section-container .contact-details{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        padding-bottom: 20px;
-    }
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .contact-details .contact-detail{
-        width: 150px;
-        
-        & span{
-            font-size: x-small;
-        }
+.form-element {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
-        & .contact-info{
-            font-size: xx-small;
-        }
-    }
-    
-    .section-container > .contact-form{
-        padding: 6px;
-        height: 350px;
-    }
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-    .vl{
-        margin: 0;
-        padding: 0;
-        height: 0;
-    }    
-}    
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+/* added some additional styles for the form elements */
+.form-element:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-element::placeholder {
+    color: #ccc;
+}
+
+.form-element:-ms-input-placeholder {
+    color: #ccc;
+}
+
+.form-element::-moz-placeholder {
+    color: #ccc;
+}
