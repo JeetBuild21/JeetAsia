@@ -63,6 +63,34 @@ function slidefun(n) {
     dot[counter - 1].className += " active";
 }
 
+// Projects
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+
+// Close the modal if the user clicks anywhere outside of it
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+        event.target.style.display = "none";
+    }
+}
+
+// Patners
+// Ensure the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+    const aboutButton = document.querySelector("#about-button"); // Replace with the actual ID of your 'About' button in the header
+
+    aboutButton.addEventListener("click", function() {
+        document.querySelector("#about-us").scrollIntoView({ behavior: "smooth" });
+    });
+});
+
+
+// Contact form
 function sendEmail(event) {
     event.preventDefault();
     const name = document.getElementById('name').value;
@@ -87,3 +115,4 @@ function sendEmail(event) {
             console.log('Error sending email:', error);
         });
 }
+
